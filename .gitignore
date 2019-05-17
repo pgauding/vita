@@ -2,3 +2,5 @@ cv_gauding.log
 *.pdf
 *#
 .#*
+.DS_Store
+*.lb
