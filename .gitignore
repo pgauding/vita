@@ -8,3 +8,10 @@ cv_gauding.log
 *~
 cv_20170920.lyx
 _region_.tex
+
+*.aux
+*.dvi
+*.fdb*
+*.fls
+*.out
+*.toc
