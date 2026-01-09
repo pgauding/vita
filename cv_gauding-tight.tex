@@ -1,0 +1,553 @@
+\documentclass[margin,line,pifont,palatino,courier]{res}
+
+\usepackage{pifont}
+\usepackage[latin1] {inputenc}
+
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{caption}
+
+\usepackage{hyperref}
+\usepackage{fontawesome} % Uncomment if fontawesome is installed
+\usepackage{datetime}
+\usepackage{enumitem} % For tighter list spacing
+
+% If fontawesome is NOT installed, uncomment these text alternatives:
+% \newcommand{\faPhone}{\textnormal{Tel:}}
+% \newcommand{\faEnvelope}{\textnormal{Email:}}
+% \newcommand{\faGlobe}{\textnormal{Web:}}
+% \newcommand{\faGithub}{\textnormal{GitHub:}}
+\newcommand{\monthyear}{\monthname[\month] \the\year ~}
+\tolerance=1
+\emergencystretch=\maxdimen
+\hyphenpenalty=10000
+\hbadness=10000
+
+% === WHITESPACE REDUCTION HACKS ===
+% Reduce space before sections
+\renewcommand{\sectionskip}{2ex plus 0.5ex minus 0.5ex}
+% Tighten paragraph skip
+\setlength{\parskip}{0.3\baselineskip}
+% Remove all extra spacing from lists
+\setlist{nosep, leftmargin=*}
+\setlist[enumerate]{leftmargin=1.5em}
+\setlist[itemize]{leftmargin=1.5em}
+% === END WHITESPACE HACKS ===
+
+%\topmargin .5in
+%\oddsidemargin -.5in
+%\evensidemargin -.5in
+%\textwidth=6.0in
+ \textheight=9.0in
+%\itemsep=0in
+%\parsep=0in
+\usepackage{fancyhdr}
+%\topmargin=0in
+%\textheight=8.5in
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0pt}
+\fancyhf{}
+%\cfoot{\thepage}
+%\lfoot{\footnotesize \monthyear}}
+\rfoot{{\footnotesize \monthyear -- Gauding \thepage}}
+
+
+\newenvironment{list1}{
+  \begin{list}{\ding{113}}{%
+      \setlength{\itemsep}{0in}
+      \setlength{\parsep}{0in} \setlength{\parskip}{0in}
+      \setlength{\topsep}{0in} \setlength{\partopsep}{0in}
+      \setlength{\leftmargin}{0.17in}}}{\end{list}}
+\newenvironment{list2}{
+  \begin{list}{$\bullet$}{%
+      \setlength{\itemsep}{0in}
+      \setlength{\parsep}{0in} \setlength{\parskip}{0in}
+      \setlength{\topsep}{0in} \setlength{\partopsep}{0in}
+      \setlength{\leftmargin}{0.2in}}}{\end{list}}
+
+\begin{document}
+
+\name{Patrick John Gauding \vspace*{.1in}}
+
+\begin{resume}
+
+\section{\sc Contact Information}
+\begin{tabular}{@{}p{2.75in}p{2in}}
+  Department of Politics & {\faPhone} \verb+1.931.598.1994+ \\
+  University of the South            & {\faEnvelope} {\tt \href{mailto:pjgaudin@sewanee.edu}{pjgaudin@sewanee.edu}}\\
+  735 University Ave.          & {\faGlobe}
+                                                        {\tt \href{https://patrickgauding.com}{patrickgauding.com}}\\
+  Sewanee, TN 37383 USA           & {\faGithub} {\tt \href{https://github.com/pgauding}{github.com/pgauding}}\\
+
+\end{tabular}
+
+% \section{\sc Research Interests} {\bf Substantive}: law \& society,
+% marginalized populations, criminal
+% justice reform, political economy, local government finance, representation, bureaucracy\\
+% {\bf Public policy and administration}: policy diffusion, policy
+% adoption, policy implementation\\
+% {\bf American politics}: public opinion, political behavior, state and
+% local politics\\
+% {\bf Methodological}: quantitative methods, sparse data, computational
+% efficiency, Bayesian modeling, methodological pedagogy\\
+
+\section{\sc Academic Appointments}
+
+%\begin{tabular}{lr}
+{\bf University of the South} \\
+\vspace*{-.1in}
+\begin{list1}
+\item[] Assistant Professor, Department of Politics, 2023--
+\item[] Visiting Assistant Professor, Department of Politics, 2022--2023
+\end{list1}
+
+
+\section{\sc Education}
+
+{\bf University of Kansas}\\
+\vspace*{-.1in}
+\begin{list1}
+\item[] Ph.D.~in Political Science, August 2022
+  % \begin{itemize}
+  %   \vspace*{.05in}
+  % \item Dissertation Title: ``The Politics of Criminal Diversions''
+  % \item Advisor: Donald P. Haider-Markel
+  %   % \item GPA: 3.760
+  % \end{itemize}
+\end{list1}
+
+{\bf University of Cincinnati}\\
+\vspace*{-.1in}
+\begin{list1}
+\item[] M.A.~in Political Science, August 2013
+\item[] B.A.~in History (with honors), December 2012
+
+% \begin{list2}
+% \vspace*{.05in}
+% \item with honors
+% \end{list2}
+
+\end{list1}
+
+\section{\sc Journal \\Publications}
+
+\begin{enumerate}
+
+\item Cavataro, Benjamin L., and \textbf{Patrick J. Gauding}.
+  Forthcoming. ``Intra-Agency Polarization and the Fate of Agency Independence.'' \emph{Northeastern
+    University Law Review} 18(2).
+
+\item Haider-Markel, Donald P., \textbf{Patrick Gauding}, Andrew Flores,
+Daniel C. Lewis, Patrick R. Miller, Barry Tadlock, and Jami
+K. Taylor. 2020. ``LGBTQ State Legislative Candidates in an Era
+of Backlash.'' \emph{PS: Political Science \& Politics} 53(3): 453--459.
+
+
+\end{enumerate}
+
+\section{\sc Book \\Chapters}
+
+\begin{enumerate}
+
+\item Haider-Markel, Donald P., Abigail Vegter, and \textbf{Patrick
+    J. Gauding}. 2023. ``Support for Gun Rights: Group Identities,
+  Perceptions of Safety, and Attitudes about Responses to Mass
+  Shootings in the United States.'' In \textit{All American Massacre:
+    The Tragic Role of American Culture and Society in Mass
+    Shootings}, eds. Eric Mafdis and Adam Lankford,
+  222--236. Philadelphia: Temple University Press.
+
+\item Haider-Markel, Donald P., \textbf{Patrick Gauding}, and Abigail
+  Vegter. 2021. ``Political Subgroups, Knowledge, and Information: Gun
+  Issues and Gun Ownership.'' in \textit{The Politics of Truth in
+    Polarized America}, eds. David Barker and Elizabeth Suhay,
+  152--176. Oxford: Oxford University Press.
+
+\item Haider-Markel, Donald P., and \textbf{Patrick
+    Gauding}. 2018. ``LGBT Judges in the United States.'' In
+  \textit{Race, Gender, Sexuality and the Judiciary}, eds. Sharon
+  A. Navarro and Samantha Hernandez, 77--97. Cambridge: Cambridge
+  University Press.
+
+\end{enumerate}
+
+\section{\sc Other\\Publications}
+
+\begin{enumerate}
+
+  \item \textbf{Gauding, Patrick J.} 2023. ``On Target: Gun Culture,
+    Storytelling, and the NRA. By Noah S. Schwartz.'' Review of
+    \emph{On Target: Gun Culture, Storytelling, and the NRA}, Noah
+    S. Schwartz. \emph{Perspectives on Politics} 21(4): 1487--1488.
+
+\item Cooney, Samantha R., \textbf{Patrick J. Gauding}, Anna A. Meier,
+  and Kevin Reuning. 2022. ``Community, Solidarity, and Collective
+  Power: The Role of Graduate Student Organizations and Graduate
+  Worker Unions.'' In \textit{Strategies for Navigating Graduate
+    School and Beyond}, eds. Kevin G. Lorentz II, Daniel J. Mallinson,
+  Julia Marin Hellwege, Davin Phoenix, and J. Cherie Strachan,
+  210--215. Washington D.C.: American Political Science Association.
+
+\end{enumerate}
+
+% \section{\sc Working Papers}
+
+% \begin{enumerate}
+
+%   \item ``Intra-Agency Polarization'' (with Benjamin L. Cavataro)
+% % % \item ``Explaining Support and Attributions for State Violence:
+% % % Authoritarianism and Gun Ownership'' (with Donald P. Haider-Markel).
+
+% % % \item ``Speak Loudly and Carry a Big Stick: Gun Ownership, Motivated
+% % % Reasoning, and Support for Use of Military Force'' (with Alexandra
+% % % Middlewood and Donald P. Haider-Markel)
+
+% % \item ``Measuring the Social Identity of Gun Owners in America'' (with
+% %   Abigail Vegter and Donald P. Haider-Markel).
+
+% % \item ``Stories or Statistics?: The Narrative Policy Framework and
+% %   Nuclear Energy'' (with Walter Schmidt).
+
+% % \item``Group Identities, Perceptions of Safety, and Attitudes about
+% %   Responses to Mass Shootings'' (with Abigail Vegter and Donald
+% %   P. Haider-Markel).
+
+% % \item``The Diffusion of Special Population Courts'' (with Matthew
+% %   D. Cravens).
+% \end{enumerate}
+
+\section{\sc Conference\\ Presentations}
+
+\begin{itemize}
+\item Conference on Empirical Legal Studies 2025
+\item Midwest Political Science Association: 2019, 2020*, 2021, 2022,
+  2023, 2024, 2025
+\item Consumer Law Scholars Conference: 2025
+\item University of Michigan Law School Junior Scholars Conference:
+  2023
+\item St. Anselm Workshop on the Ethics, Law, and Social Science of
+  Firearms and Self-Defense: 2022
+\item American Political Science Association: 2021
+\item Southern Political Science Association: 2018, 2026
+\end{itemize}
+
+% \begin{enumerate}
+
+%   FILL THESE IN
+
+% \item 2026. SPSA
+
+% \item 2025. CELS
+
+% \item 2025. MPSA2
+
+% \item 2025. MPSA1
+
+% \item 2025. CLSC
+
+% \item 2024. MPSA
+
+% \item 2023. \emph{Portrait of a Federal Safety Regulator: Action,
+% Polarization, and Consensus Within CPSC}, with Benjamin
+% L. Cavataro. Presented at the annual University of Michigan Law School
+% Junior Scholars Conference, Ann Arbor MI. April.
+
+% \item 2023. \emph{Electoral Reforms as Policy Influencing Factors? The
+% Partisan, Participatory, and Policy Implications of Registration and
+% Voting Requirements}, with Joseph A. Coll and Molly
+% Jirgal\footnote{Undergraduate co-author}. Presented at the annual
+% meeting of the Midwest Political Science Association, Chicago
+% IL. April.
+  
+% \item 2022. \emph{Shoot First, Ask Questions Later: Briney and the
+% Early Expansion of Castle Doctrine}, with Alexandra
+% Middlewood. Presented at the Workshop on The Ethics, Law, and Social
+% Science of Firearms and Self-Defense, Manchester, NH. November.
+  
+% \item 2022. \emph{Similar Reforms, Different Determinants? Explaining
+% the Adoption of Different Types of Specialty Courts}, with Matthew
+% D. Cravens. Presented at the annual meeting of the Midwest Political
+% Science Association, Chicago IL. April.
+
+% \item 2021. \emph{The Relationship Between Criminal Justice Reform and
+% Revenue Generation}. Presented at the annual meeting of the American
+% Political Science Association, Seattle WA. October.
+
+% \item 2021. \emph{The Diffusion of Criminal Justice Reform: Evidence
+% from Statutory Adoptions of Diversion Policies}. Presented at the
+% annual meeting of the Midwest Political Science Association, Chicago
+% IL. April.
+
+% \item 2020. \emph{Public Opinion and Criminal Justice Reform: Support
+% for Criminal Diversions}. To have been presented at the annual meeting
+% of the Midwest Political Science Association, Chicago IL. April.
+
+% \item 2018. \emph{Speak Loudly and Carry a Big Stick: Gun Ownership,
+% Motivated Reasoning, and Support for Use of Military Force}, with
+% Alexandra Middlewood, Donald P. Haider-Markel, Mark R. Joslyn, Cagil
+% Albayrak, and Bronson Herrera. Presented at the annual meeting of the
+% Southern Political Science Association, New Orleans LA. January.
+% \end{enumerate}
+
+\section{\sc Conference\\ Panels}
+
+\begin{enumerate}
+
+\item 2021. Panelist, ``Courts and the Criminal Justice System 2021
+  Roundtable''. Annual meeting of the Great Plains Political Science
+  \end{enumerate}
+
+\section{\sc Other\\ Talks}
+
+\begin{enumerate}
+\item 2018. \emph{An introduction to} \verb+ggplot2+, Kansas City
+  \verb+R+ Users Group, Olathe, KS. January.
+\end{enumerate}
+
+% \section{\sc Additional\\ Training}
+
+%     %     \begin{tabular}{@{}p{0.8in}p{4in}}
+%     %     2017 - 2018   & Member, Bayesian Modeling Workgroup\\
+%     %                & Center for Research Methods and Data Analysis\\
+%     %                & University of Kansas\\
+%     %     2017      & Member, Spatial Modeling Workgroup\\
+%     %                & Center for Research Methods and Data Analysis\\
+%     %                & University of Kansas\\
+%     %     2017      & Summer Statistical Institute\\
+%     %                & Center for Research Methods and Data Analysis\\
+%     %                & University of Kansas\\
+%     %     2016 - 2017  & Political Science Teaching Professionalization Workshop\\
+%     %                & Department of Political Science\\
+%             %                         & University of Kansas\\
+% \begin{tabular}{ll}
+%   \textbf{\underline{University of Kansas}} &\\
+%   \underline{Center for Research Methods and Data Analysis} &\\
+%   \\
+%   2017 - 2018 & Bayesian Modeling Workgroup \\
+%   2017 & Spatial Modeling Workgroup\\
+%   2017 & Summer Statistical Institute\\
+%   \\
+%   \underline{Department of Political Science}\\
+%   2016 - 2017 & Teaching Professionalization Workshop\\
+%   \\
+% \end{tabular}
+
+
+\section{\sc Honors and\\ Awards}
+
+% \begin{tabular}{@{}p{0.8in}p{4in}}
+%   2020       & Thompson Scholarship: \bf{\$3,000}\\
+%              & University of Kansas Department of Political Science \\
+%   2019       & Lance F. Johnson Award: \bf{\$500}\\
+%              & University of Kansas Department of Political Science \\
+%   2019       & Thompson Scholarship: \bf{\$3,000}\\
+%              & University of Kansas Department of Political Science \\
+%   2019       & Lance F. Johnson Award: \bf{\$1,100}\\
+%              & University of Kansas Department of Political Science \\
+%   2018       & Thompson Scholarship: \bf{\$3,000}\\
+%              & University of Kansas Department of Political Science \\
+%   2017       & Thompson Scholarship: \bf{\$3,000}\\
+%              & University of Kansas Department of Political Science \\
+%   2012       & George B. Engberg Prize, 3rd Prize: \bf{\$250}  \\
+%              & University of Cincinnati Department of History  \\
+%   2009 - 2013 & Cincinnatus Presidential Scholar: \bf{\$80,000}\\
+    %                & University of Cincinnati \\
+\begin{tabular}{ll} % Fix this alignment
+  \textbf{\underline{University of the South}} &\\
+  2026       & SPSA Artinian Travel Award: \bf{\$500}\\[4pt]
+  \textbf{\underline{University of Kansas}} &\\
+  2020       & Doctoral Student Research Fund: \bf{\$1,500}\\[2pt]
+  \underline{Department of Political Science}&\\
+  2021, 2019(x2)       & Lance F. Johnson Award: \bf{\$1,000}\\
+  2021, 2020, 2019, 2018, 2017       & Thompson Scholarship: \bf{\$3,000}\\[4pt]
+  \textbf{\underline{University of Cincinnati}}&\\
+  2009 - 2013 & Cincinnatus Presidential Scholar: \bf{\$80,000}\\[2pt]
+  \underline{Department of History}&\\
+  2012       & George B. Engberg Prize, 3rd Prize: \bf{\$250}  \\
+\end{tabular}
+%\newpage{}
+
+%\section{\sc Graduate Coursework}
+
+%\begin{tabular}{@{}p{2.3in}p{3in}}
+%\begin{list1}
+%\item Theories of the Policy Process
+%\item Policy Adoption/ Implementation
+%\item Policy Analysis
+%\item Political Behavior
+%\item Campaigns and Elections
+%\item Urban and Regional Theory
+%\end{list1}
+%&
+%\begin{list1}
+%\item Urban Politics and Policy
+%\item Research Design
+%\item Research Methods I/II
+%\item Statistical Computing Foundations
+%\item Multilevel Modeling
+%\item Bayesian Analysis
+%\end{list1}
+
+%\end{tabular}
+
+
+
+
+%\section{\sc Scientific Research Experience}
+
+%\begin{tabular}{@{}p{0.8in}p{4in}}
+
+%1991--1992 & Production of discrete variable representation sets. \\
+%& \hspace{0.2in} Advisor: A. Smith, Department of Physics,\\
+%& \hspace{0.2in} University of California at Berkeley.\\
+
+%1990--1991 & Creation of signal processing algorithms for the Gamma Ray Energy Tracking Array. \\
+%& \hspace{0.2in} Advisor: K. Clemens, Nuclear Structures Group, \\
+%& \hspace{0.2in} E. O. Lawrence Berkeley National Laboratory.\\
+
+%1989--1990 & Laser spectroscopy investigations of the reaction dynamics of HFCO.\\
+%& \hspace{0.2in} Advisor: C. Shafter, Department of Chemistry,\\
+%& \hspace{0.2in} University of California at Berkeley.\\
+
+%\end{tabular}
+
+% \section{\sc Technical \\ Skills}
+
+% \begin{tabular}{@{}p{0.8in}p{6in}}
+
+% Languages:& \verb+R, Stata, bash, Git, Python+, \LaTeX   \\
+
+% \end{tabular}
+
+
+%\newpage
+% \section{\sc Teaching\\ Experience}
+
+% % \begin{tabular}{@{}p{0.8in}p{3.5in}}
+% %   2020        & Instructor, Public Policy Analysis\\
+% %               & University of Kansas\\
+% %   2020        & Adjunct Instructor, U.S. Politics (online)\\
+% %               & Kansas State University\\
+% %   2019        & Instructor, Contemporary Issues in American Politics\\
+% %               & University of Kansas\\
+% %   2019        & Instructor, Introduction to Public Policy (online) \\
+% %               & University of Kansas \\
+% %   2019        & Adjunct Instructor, Introduction to Political Science\\
+% %               & Kansas State University\\
+% % %              & SS19\\
+% %   2018        & Teaching Assistant, Graduate Research Methods II\\
+% % %              & FS18\\
+% %   2017 - 2019 & Teaching Assistant, Undergraduate Research Methods\\
+% % %              & FS16, SS17, FS18, SS19\\
+% %   2016 - 2017 & Teaching Assistant, Introduction to American Politics\\
+% % %   & FS17, SS18\\
+% \begin{tabular}{ll}
+%     \textbf{\underline{University of the South}} & \tabularnewline
+%   & \tabularnewline
+%   & POLS 217: Criminal Justice Policy (FS22)\tabularnewline
+%   & POLS 223: Public Policy (FS22, SS23)\tabularnewline
+%     & POLS 312: Policy Analysis (SS23)\tabularnewline
+%   & POLS 313: Environmental Politics and Policy (FS22, SS23)\tabularnewline
+%   & \tabularnewline
+%   \textbf{\underline{University of Kansas}} & \tabularnewline
+%   & \tabularnewline
+%     Instructor of Record: & \tabularnewline
+%   & POLS 110: U.S. Politics (FS20)\tabularnewline
+%   & POLS 310: Contemporary Issues in American Politics (FS19)\tabularnewline
+%   & POLS 320: Introduction to Public Policy (US19, US21, FS21, SS22)\tabularnewline
+%   & POLS 621: Public Policy Analysis (SS20, SS21)\tabularnewline
+%   & POLS 628: The Politics of Public Health (US20)\tabularnewline
+%   & POLS 629: Criminal Justice Policy (FS20)\tabularnewline
+%     Teaching Assistant: & \tabularnewline
+%   & POLS 110: U.S. Politics (FS16 - SS17)\tabularnewline
+%   & POLS 306: Undergraduate Research Methods (FS17 - SS19)\tabularnewline
+%   & POLS 707: Graduate Research Methods II (FS18)\tabularnewline
+%   & \tabularnewline
+%     \textbf{\underline{Kansas State University}} & \tabularnewline
+%   & \tabularnewline
+%     Lecturer: & \tabularnewline
+%   & POLS 110: Introduction to Political Science (SS19)\tabularnewline
+%   & POLS 115: U.S. Politics (SS20)\tabularnewline
+%   & \tabularnewline
+%     \textbf{\underline{Wichita State University}} & \tabularnewline
+%   & \tabularnewline
+%     Lecturer: & \tabularnewline
+%   & POLS 121: American Politics (SS22)\tabularnewline
+%   & \tabularnewline
+% \end{tabular}
+
+
+%\newpage
+
+
+% \begin{tabular}{@{}p{0.8in}p{4in}}
+
+%   & American Political Science Association\\
+%   & Midwest Political Science Association\\
+%   & Southern Political Science Association\\
+%   & Great Plains Political Science Association\\
+% \end{tabular}
+
+%\newpage{}
+\section{\sc Service}
+
+\begin{tabular}{@{}p{0.8in}p{4in}}
+  \underline{Discipline} &\\
+  Referee: & \textit{Politics, Groups, and Identities} (x1) \\
+  Discussant: & MPSA 2025 (x2) \\
+  Panel Chair: & MPSA 2025 (x2), SPSA 2026 \\[4pt]
+  \hspace{1em}\underline{University of the South}&\\
+  2025--2026 & Faculty Advisor, Truman Scholarship \\
+  2024 & Department of Politics Curriculum Renewal Subcommittee \\
+  2024-- & Committee on Committees \\
+  2023-- & Environment and Sustainability Program Steering Committee\\
+  2023-- & Faculty Advisor, Miller Public Policy Fellows         \\
+  2023 & Women and Gender Studies/Politics Search Committee\\
+  2023--2025 & Pi Sigma Alpha Best Paper Award Selection Committee\\[4pt]
+  \hspace{1em}\underline{University of Kansas}&\\
+  2018--2021 & Political Director and Negotiations Chair,\\
+              &  GTAC, AFT-Ks Local 6403 \\
+  2018 & Grievance Resolution Working Group \\
+  2018 & GTA Term Limits Working Group\\
+  2016--2022 & PSGA Faculty Representative\\
+\end{tabular}
+
+
+\section{\sc Professional\\ Memberships}
+
+American Political Science Association, Midwest Political Science
+Association, Southern Political Science Association, Association for
+Public Policy Analysis and Management, Society for Empirical Legal
+Studies, Great Plains Political Science Association
+
+%\newpage
+
+\section{\sc References}
+
+Available on request.
+
+% \textbf{Donald P. Haider-Markel} \\
+% Professor of Political Science, University of Kansas \\
+% \verb+1.785.864.9034+\\
+% \texttt{dhmarkel@ku.edu}
+
+% \textbf{Charles R. Epp} \\
+% University Distinguished Professor of Public Administration, University of Kansas \\
+% \verb+1.785.864.9087+\\
+% \texttt{chuckepp@ku.edu}
+
+% \textbf{Kevin J. Mullinix} \\
+% Assistant Professor of Political Science, University of Kansas \\
+% \verb+1.785.864.3524+\\
+% \texttt{kmullinix@ku.edu}
+
+% \textbf{Amy S. Patterson}\\
+% Carl Gustav Biehl Jr. Professor of International Affairs, University
+% of the South \\
+% \verb+1.931.598.1547+\\
+% \texttt{aspatter@sewanee.edu}\\
+
+\end{resume}
+\end{document}
